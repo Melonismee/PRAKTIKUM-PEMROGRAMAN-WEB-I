@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPhotography</title>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        .font1 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .font2 {
+            letter-spacing: 5px;
+            color: grey;
+        }
+
+        .font3{
+            font-family: 'Times New Roman', Times, serif;
+            color: grey;
+        }
+
+        .square {
+            border: solid 1px #bfbcbc !important;
+            border-radius: 8px;  
+        }
+
+        .circle {
+            border: solid 1px #bfbcbc !important;
+            border-radius: 50px;
+            padding: 7px 15px !important;
+        }
+
+        nav ul li{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        .jarak{
+            margin-top: 200px;
+        }
+        
+        .bottom {
+            height: 250px;
+        }
+
+        .isi {
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 100px;
+        }
+        
+        .baris {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .gambar img {
+            width: 350px;
+            height: 250px;
+        }
+
+        .logo img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        .corner {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            border-color: black;
+            border-style: solid;
+            z-index: 9999;
+        }
+
+        .corner.tl {
+            top: 0;
+            left: 0;
+            border-width: 8px 0 0 8px;
+        }
+
+        .corner.tr {
+            top: 0;
+            right: 0;
+            border-width: 8px 8px 0 0;
+        }
+
+        .corner.bl {
+            bottom: 0;
+            left: 0;
+            border-width: 0 0 8px 8px;
+        }
+
+        .corner.br {
+            bottom: 0;
+            right: 0;
+            border-width: 0 8px 8px 0;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="corner tl"></div>
+    <div class="corner tr"></div>
+    <div class="corner bl"></div>
+    <div class="corner br"></div>
+
+    <nav class="d-flex bg-body-tertiary py-4 px-4 justify-content-between align-items-center mb-5 font1" >
+        <h1 class="fw-bold ms-5">JPhotography</h1>
+        <nav class="font1">
+            <ul class="nav mx-5">
+                <li> <a class="nav-link square" style="color: black;" href="#">HOME</a></li>
+                <li> <a class="nav-link" style="color: grey;" href="#">ABOUT ME</a></li>
+                <li> <a class="nav-link" style="color: grey;" href="#">PORTFOLIO</a></li>
+                <li> <a class="nav-link" style="color: grey;" href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </nav>
+
+    <div class="text-center pt-3">
+        <h2 class="fw-bold font1">Hi. Hello.. I Am JohnDas...!<br> I Travel Around The World To Get The Best Photo.!</h2>
+        <p class="font2">AWARD WINNING PHOTOGRAPHER / CINEMATOGRAPHER / WRITER</p>
+    </div>
+
+    <div class="d-flex mt-5 justify-content-center">
+        <ul class="d-flex justify-content-center align-items-center list-unstyled gap-4 font3">
+            <li><a class="nav-link circle" href="#">All</a></li>
+            <li><a class="nav-link" href="#">Landscape</a></li>
+            <li><a class="nav-link" href="#">Portrait</a></li>
+            <li><a class="nav-link" href="#">Product</a></li>
+        </ul>
+    </div>
+
+    <div class="isi">
+        <div class="baris">
+            <div class="gambar"><img src="images/dora.jpg"></div>
+            <div class="gambar"><img src="images/dora.jpg"></div>
+            <div class="gambar"><img src="images/dora.jpg"></div>
+            <div class="gambar"><img src="images/dora.jpg"></div>
+        </div>
+        <div class="baris">
+            <div class="gambar"><img src="images/dora.jpg"></div>
+            <div class="gambar"><img src="images/dora.jpg"></div>
+            <div class="gambar"><img src="images/dora.jpg"></div>
+            <div class="gambar"><img src="images/dora.jpg"></div>
+        </div>
+        <div class="baris">
+            <div class="gambar"><img src="images/dora.jpg"></div>
+            <div class="gambar"><img src="images/dora.jpg"></div>
+            <div class="gambar"><img src="images/dora.jpg"></div>
+            <div class="gambar"><img src="images/dora.jpg"></div>
+        </div>
+        <div class="baris">
+            <div class="gambar"><img src="images/dora.jpg"></div>
+            <div class="gambar"><img src="images/dora.jpg"></div>
+            <div class="gambar"><img src="images/dora.jpg"></div>
+            <div class="gambar"><img src="images/dora.jpg"></div>
+        </div>
+    </div>
+
+    <div class="row bottom bg-body-tertiary">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+            <h2 class="logo font1">JPhotography</h2>
+            <p class="font3">© Copyrights 2019 All Rights Reserved</p>
+            <div class="logo-group d-flex gap-4">
+                <a class="logo" href=""><img src="images/dribble.png"></a>
+                <a class="logo" href=""><img src="images/behance.png"></a>
+                <a class="logo" href=""><img src="images/instagram.png"></a>
+                <a class="logo" href=""><img src="images/500px.png"></a>
+                <a class="logo" href=""><img src="images/flickr.png"></a>
+                <a class="logo" href=""><img src="images/facebook.png"></a>
+                <a class="logo" href=""><img src="images/twitter.png"></a>
+            </div>
+        </div>
+    </div>
+  
+</body>
+</html>
